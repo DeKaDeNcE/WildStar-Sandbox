@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30028.174
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arctium WildStar Sandbox", "Projects\StsServer\Arctium WildStar Sandbox.csproj", "{27166AA7-E01B-471C-AE0D-491C785CBCCB}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AuthServer", "Projects\AuthServer\AuthServer.shproj", "{BFC30D12-0B97-4F56-9E07-769F41E45A3D}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "RealmServer", "Projects\RealmServer\RealmServer.shproj", "{89B1F25C-EA72-4E19-BB61-ADDF1A4C3D0A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Framework", "Projects\Framework\Framework.shproj", "{0E97D69D-0E6F-46CB-95EC-C2FD84D9635D}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Projects\Framework\Framework.projitems*{0e97d69d-0e6f-46cb-95ec-c2fd84d9635d}*SharedItemsImports = 13
+		Projects\AuthServer\AuthServer.projitems*{27166aa7-e01b-471c-ae0d-491c785cbccb}*SharedItemsImports = 5
+		Projects\Framework\Framework.projitems*{27166aa7-e01b-471c-ae0d-491c785cbccb}*SharedItemsImports = 5
+		Projects\RealmServer\RealmServer.projitems*{27166aa7-e01b-471c-ae0d-491c785cbccb}*SharedItemsImports = 5
+		Projects\RealmServer\RealmServer.projitems*{89b1f25c-ea72-4e19-bb61-addf1a4c3d0a}*SharedItemsImports = 13
+		Projects\AuthServer\AuthServer.projitems*{bfc30d12-0b97-4f56-9e07-769f41e45a3d}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27166AA7-E01B-471C-AE0D-491C785CBCCB}.Debug|x64.ActiveCfg = Debug|x64
+		{27166AA7-E01B-471C-AE0D-491C785CBCCB}.Debug|x64.Build.0 = Debug|x64
+		{27166AA7-E01B-471C-AE0D-491C785CBCCB}.Release|x64.ActiveCfg = Release|x64
+		{27166AA7-E01B-471C-AE0D-491C785CBCCB}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31BC040F-FEFE-4026-A02E-4F9C7A7E64D8}
+	EndGlobalSection
+EndGlobal

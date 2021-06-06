@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>Arctium WildStar Sandbox</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <ApplicationIcon>arctium.ico</ApplicationIcon>
+    <TargetFramework>net6.0</TargetFramework>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SignAssembly>false</SignAssembly>
+
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutputPath>..\..\build\Debug</OutputPath>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutputPath>..\..\build\Release</OutputPath>
+    <WarningsAsErrors />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <RdXmlFile Include="rd.xml" />
+  </ItemGroup>
+
+
+  <Import Project="..\Framework\Framework.projitems" Label="Shared" />
+  <Import Project="..\AuthServer\AuthServer.projitems" Label="Shared" />
+  <Import Project="..\RealmServer\RealmServer.projitems" Label="Shared" />
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+</Project>

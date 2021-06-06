@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>bfc30d12-0b97-4f56-9e07-769f41e45a3d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AuthServer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+	<Compile Include="$(MSBuildThisFileDirectory)Attributes\AuthPacketAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AuthServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\Net\ClientMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Constants\Net\ServerMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\AuthSession.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packets\Handler\AuthHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packets\Packet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packets\PacketHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Packets\PacketManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Network\Server.cs" />
+  </ItemGroup>
+</Project>
